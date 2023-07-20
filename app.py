@@ -12,7 +12,6 @@ app.config.from_pyfile('config.py')
 app.json_encoder = JSONEncoder
 
 main_db_connection = connect(alias='main',db=app.config['MONGO_DBNAME'],host=app.config['MONGODB_URI'])
-# sub_db_connection = connect(db=app.config['MONGO_DBNAME'])
 
 connections = {}
 
